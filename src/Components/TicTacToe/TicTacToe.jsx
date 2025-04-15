@@ -57,6 +57,13 @@ const TicTacToe = () => {
     Setlock(false);
     data = ["", "", "", "", "", "", "", "", ""];
     titleRef.current.innerHTML = "Tic Tac Toe";
+
+    const boxes = document.querySelectorAll(".boxes");
+    boxes.forEach((box) => {
+      box.innerHTML = "";
+    });
+
+    setCount(0);
   };
   return (
     <div className="container">
